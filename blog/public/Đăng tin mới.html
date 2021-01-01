@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://phongtro123.com/quan-ly/tin-dang.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="robots" content="noindex,nofolow">
+    <meta name="_token" content="8PW1m1Q2pJa0aHuGOJUoA1xyDCZR1NWBjfZAKlab">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/css/app.css">
+    <!-- <link rel="stylesheet" href="./asset/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="./asset/css/stylesheets.css">
+    <link rel="stylesheet" href="./asset/css/uikit.css">
+    <link rel="stylesheet" type="text/css" property="stylesheet" href="./asset/css/bootstrap.css">
+    <!-- javascipt -->
+    <script src="./asset/javascipt/bootstrap.js"></script>
+    <script src="./asset/javascipt/defer_plus.js"></script>
+    <script src="./asset/javascipt/jquery.js"></script>
+    <script src="./asset/javascipt/jquery_002.js"></script>
+    <script src="./asset/javascipt/uikit.js"></script>
+    <script src="./asset/javascipt/uikit-icons.min.js"></script>
+
+    <script type="text/javascript" src="./asset/javascipt/javascript"></script>
+    <script type="text/javascript">
+        jQuery.noConflict(true);
+    </script>
+
+    <link rel="stylesheet" href="./asset/css/reset.min.css">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/phongtro.dashboard.css">
+    <link rel="stylesheet" href="./asset/css/phongtro.dashboard.responsive.css">
+    <title>Quản lý bài đăng</title>
+    <script type="text/javascript" async="" src="./asset/javascript/analytics.js.download"></script>
+    <script async="" src="./asset/javascript/default" charset="UTF-8" crossorigin="*"></script>
+    <script type="text/javascript">
+        base_url = "https://phongtro123.com";
+        base_api_url = "https://phongtro123.com/api";
+        get_district_ajax = {
+            ajaxurl: '#'
+        };
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./asset/javascript/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-60724554-1');
+    </script>
+
+</head>
+
+<body class="dashboard loaded ready">
+    <div id="webpage">
+
+        <!-- Thanh header thứ 2. Logo chỉnh sửa sau. Thanh menu chỉ để tượng chửng chưa dùng đc -->
+        <div class="menuHeader uk-sticky" uk-sticky>
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar-container uk-navbar-transparent uk-navbar" uk-navbar="">
+                    <div class="uk-navbar-left">
+                        <a href="#my-id" class="uk-navbar-toggle menuHeader__navItem uk-hidden@m" uk-toggle="">
+                            <div id="m_nav_menu" class="m_nav menu">
+                                <span class="m_nav_ham_button_closed uk-icon-button" uk-icon="icon: menu; ratio: 1.5;" style="color: black;"></span>
+                            </div>
+                        </a>
+                        <a href="./index.html" class="uk-navbar-item uk-padding-remove uk-logo">
+                            <img src="./asset/image/EasyAccomod.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li>
+                                <a href="./index.html" style="font-size: small;">TRANG CHỦ</a>
+                            </li>
+                            <li>
+                                <a href="" style="font-size: small">TRA CỨU</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: small;">DỊCH VỤ</a>
+                                <div class="uk-navbar-dropdown menuHeader__navbarDropdown menuHeader__navbarDropdown--oneMenu">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="">Cho thuê phòng trọ</a></li>
+                                        <li><a href="">Cho thuê chung cư mini</a></li>
+                                        <li><a href="">Cho thuê nhà nguyên căn</a></li>
+                                        <li><a href="">Cho thuê chung cư nguyên căn</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" style="font-size: small;">BẢNG GIÁ QUẢNG CÁO</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: small;">TIN TỨC</a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3 menuHeader__navbarDropdown menuHeader__navbarDropdown--gridMenu">
+                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid="">
+                                        <div>
+                                            <a href="#">
+                                                <div class="menuHeader__navbarDropdown__title">TIN TỨC GIÁ NHÀ ĐẤT</div>
+                                            </a>
+                                            <ul class="uk-list menuHeader__navbarDropdown__list1" style="margin-top: 15px">
+                                                <li><a href="#">Kinh nghiệm mua nhà</a></li>
+                                                <li><a href="#">Tư vấn mua nhà</a></li>
+                                                <li><a href="#">Bảng giá nhà đất</a></li>
+                                                <li><a href="#">Danh sách bán nhà đất</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <div class="menuHeader__navbarDropdown__title">TIN TỨC BÁN NHÀ</div>
+                                            </a>
+                                            <ul class="uk-list menuHeader__navbarDropdown__list1" style="margin-top: 15px">
+                                                <li><a href="#">Bảng giá nhà</a></li>
+                                                <li><a href="#">Thủ tục mua nhà</a></li>
+                                                <li><a href="#">Kinh nghiệm mua nhà</a></li>
+                                                <li><a href="#">Danh sách nhà cần bán</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <div class="menuHeader__navbarDropdown__title">CẨM NANG CHUYỂN NHÀ</div>
+                                            </a>
+                                            <ul class="uk-list menuHeader__navbarDropdown__list1" style="margin-top: 15px">
+                                                <li><a href="#">Cẩm nang cho khách hàng mới</a></li>
+                                                <li><a href="#">Tài liệu vận chuyển nhà</a></li>
+                                                <li><a href="#">Hướng dẫn vận chuyển nhà</a></li>
+                                                <li><a href="#">Bảng giá cước hôm nay</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <div class="menuHeader__navbarDropdown__title">TIN TỨC Ô TÔ</div>
+                                            </a>
+                                            <ul class="uk-list menuHeader__navbarDropdown__list1" style="margin-top: 15px">
+                                                <li><a href="#">Tư vấn ô tô</a></li>
+                                                <li><a href="#">Kinh nghiệm ô tô</a></li>
+                                                <li><a href="#">Danh sách hãng xe</a></li>
+                                                <li><a href="#">Bảng giá ô tô</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <div class="menuHeader__navbarDropdown__title">BLOG EasyAccomod</div>
+                                            </a>
+                                            <ul class="uk-list menuHeader__navbarDropdown__list1" style="margin-top: 15px">
+                                                <li><a href="#">Giới thiệu về chúng tôi</a></li>
+                                                <li><a href="#">Thành viên HĐQT</a></li>
+                                                <li><a href="#">Blog EasyAccomod</a></li>
+                                                <li><a href="#">Khám phá</a></li>
+                                                <li><a href="#">Hồ sơ năng lực</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <ul class="uk-list menuHeader__navbarDropdown__list1">
+                                                    <li><a href="#">Bảng giá xăng dầu hôm nay</a></li>
+                                                    <li><a href="#">Danh sách xe vận chuyển</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: small;">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Khi thu nhỏ màn hình, sẽ hiện menu ẩn -->
+        <div id="my-id" class="uk-offcanvas" uk-offcanvas="mode: reveal; overlay:true">
+            <div class="uk-overflow-auto uk-offcanvas-bar uk-padding-remove uk-flex uk-flex-column">
+                <div class="uk-flex-auto">
+                    <div class="uk-padding-small uk-margin-remove">
+                        <a href=""><img src="./asset/image/EasyAccomod-1.png" alt=""></a>
+                    </div>
+
+                    <ul class="uk-nav-default uk-nav uk-nav-parent-icon nav__menu" uk-nav>
+                        <li class="nav__menu__item"><a href="./index.html">TRANG CHỦ</a></li>
+                        <li class="nav__menu__item">
+                            <a href="#" class="nav__menu__link">TRA CỨU NHANH</a>
+                        </li>
+                        <li class="uk-parent nav__menu__item">
+                            <a href="#" class="nav__menu__link">DỊCH VỤ</a>
+                            <ul class="uk-nav-sub" hidden="" style="padding-left: 20px;">
+                                <li><a href="#" class="uk-text-small">Cho thuê phòng trọ</a></li>
+                                <li><a href="#" class="uk-text-small">Cho thuê chung cư mini</a></li>
+                                <li><a href="#" class="uk-text-small">Cho thuê nhà nguyên căn</a></li>
+                                <li><a href="#" class="uk-text-small">Cho thuê chung cư nguyên căn</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent nav__menu__item">
+                            <a href="#" class="nav__menu__link">TIN TỨC</a>
+                            <ul class="uk-nav-sub" hidden="" style="padding-left: 20px;">
+                                <li><a href="#" class="uk-text-small">Tin tức giá nhà đất</a></li>
+                                <li><a href="#" class="uk-text-small">Tin tức bán nhà</a></li>
+                                <li><a href="#" class="uk-text-small">Cẩm nang chuyển nhà</a></li>
+                                <li><a href="#" class="uk-text-small">Tin tức ô tô</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__menu__item">
+                            <a href="#" class="nav__menu__link">BẢNG GIÁ QUẢNG CÁO</a>
+                        </li>
+                        <li class="nav__menu__item">
+                            <a href="#" class="nav__menu__link">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="col-lg-2 d-none d-lg-block bg-light sidebar" style="margin-top: 35px;">
+                    <div class="user_info">
+                        <a href="#" class="clearfix">
+                            <div class="user_avatar"><img src="./asset/image/boy_1544603222.png"></div>
+                            <div class="user_meta">
+                                <div class="inner">
+
+                                    <div class="user_name">trinhthikim</div>
+
+                                    <div class="user_verify" style="color: #555; font-size: 0.9rem;">Chủ trọ</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <ul>
+                            <li><span>Mã thành viên:</span> <span style="font-weight: 700;"> 101028</span></li>
+                        </ul>
+                        <a class="btn btn-danger btn-sm" href="./Đăng tin mới.html">Đăng tin</a>
+                        <a href="#" class="btn btn-warning btn-sm mr-1">Thông báo</a>
+                    </div>
+                    <ul class="nav nav-sidebar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>                                Quản lý bài đăng
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>                                Quản lý thông tin cá nhân
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>                                Thống kê lượt xem /yêu thích
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>                                Chat với admin
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>                                Thoát
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <main role="main" class="ml-sm-auto col-lg-10">
+
+                    <div class="user_quick_info js-mobile-user-quick-info">
+                        <p style="margin-top: 0; margin-bottom: 5px;">Xin chào <strong>trinhthikim</strong>. Mã tài khoản: <strong>101028</strong></p>
+                        <p style="margin-bottom: 0;">Số dư TK của bạn là: <strong>0 đ</strong></p>
+                    </div>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Đăng tin mới</li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                        <h1 class="h1">Đăng tin mới</h1>
+                    </div>
+
+
+                    <form id="form_dangtin" class="form-horizontal js-form-submit-data js-frm-manage-post" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3>Địa chỉ cho thuê</h3>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label for="province_id" class="col-form-label">Tỉnh/Thành phố</label>
+                                            <select onchange = validateSelectBox(this) id="province_id" name="province_id" class="form-control js-select-tinhthanhpho select2-hidden-accessible" required="" data-msg-required="Chưa chọn Tỉnh/TP" tabindex="-1" aria-hidden="true">
+                                                <option value="100">-- Chọn Tỉnh/TP --</option>
+                                                <option value="90">Hồ Chí Minh</option>
+                                                <option value="41">Hà Nội</option>
+                                                <option value="72">Đà Nẵng</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="form-group" id = "context1">
+                                            <label class="col-form-label" for="district_id">Quận/Huyện</label>
+                                            <select name="district_id" id="district_id" class="form-control js-select-quanhuyen select2-hidden-accessible" required="" data-msg-required="Chưa chọn Quận/Huyện" tabindex="-1" aria-hidden="true">
+                                                <option value="">-- Chọn Quận/Huyện --</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" id = "context2">
+                                            <label class="col-form-label" for="district_id">Quận/Huyện</label>
+                                            <select name="district_id" id="district_id" class="form-control js-select-quanhuyen select2-hidden-accessible" required="" data-msg-required="Chưa chọn Quận/Huyện" tabindex="-1" aria-hidden="true">
+                                                <option value="">-- Chọn Quận/Huyện --</option>
+                                                <option value="">Quận Hoàn Kiếm</option>
+                                                <option value="">Quận Đống Đa</option>
+                                                <option value="">Quận Ba Đình</option>
+                                                <option value="">Quận Hai Bà Trưng</option>
+                                                <option value="">Quận Hoàng Mai</option>
+                                                <option value="">Quận Hai Bà Trưng</option>
+                                                <option value="">Quận Thanh Xuân</option>
+                                                <option value="">Quận Long Biên</option>
+                                                <option value="">Quận Nam Từ Liêm</option>
+                                                <option value="">Quận Bắc Từ Liêm</option>
+                                                <option value="">Quận Tây Hồ</option>
+                                                <option value="">Quận Cầu Giấy</option>
+                                                <option value="">Quận Hà Đông</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group" id = "context3">
+                                            <label class="col-form-label" for="district_id">Quận/Huyện</label>
+                                            <select name="district_id" id="district_id" class="form-control js-select-quanhuyen select2-hidden-accessible" required="" data-msg-required="Chưa chọn Quận/Huyện" tabindex="-1" aria-hidden="true">
+                                                <option value="">-- Chọn Quận/Huyện --</option>
+                                                <option value="">Quận 1</option>
+                                                <option value="">Quận 2</option>
+                                                <option value="">Quận 3</option>
+                                                <option value="">Quận 4</option>
+                                                <option value="">Quận 5</option>
+                                                <option value="">Quận 7</option>
+                                                <option value="">Quận 8</option>
+                                                <option value="">Quận 9</option>
+                                                <option value="">Quận 10</option>
+                                                <option value="">Quận 11</option>
+                                                <option value="">Quận 12</option>
+                                                <option value="">Quận Bình Thạnh</option>
+                                                <option value="">Quận Thủ Đức</option>
+                                                <option value="">Quận Gò Vấp</option>
+                                                <option value="">Quận Phú Nhuận</option>
+                                                <option value="">Quận Tân Bình</option>
+                                                <option value="">Quận Tân Phú</option>
+                                                <option value="">Quận Bình Tân</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" id = "context4">
+                                            <label class="col-form-label" for="district_id">Quận/Huyện</label>
+                                            <select name="district_id" id="district_id" class="form-control js-select-quanhuyen select2-hidden-accessible" required="" data-msg-required="Chưa chọn Quận/Huyện" tabindex="-1" aria-hidden="true">
+                                                <option value="">-- Chọn Quận/Huyện --</option>
+                                                <option value="">Quận Hải Châu</option>
+                                                <option value="">Quận Cẩm Lệ</option>
+                                                <option value="">Quận Thanh Khê</option>
+                                                <option value="">Quận Liên Chiểu</option>
+                                                <option value="">Quận Ngũ Hành Sơn</option>
+                                                <option value="">Quận Sơn Trà</option>
+                                            </select>
+                                        </div>
+                
+                                    </div>
+                                    <script language="javascript">
+                                        document.getElementById("context1").style.display = 'block';
+                                        document.getElementById("context2").style.display = 'none';
+                                        document.getElementById("context3").style.display = 'none';
+                                        document.getElementById("context4").style.display = 'none';
+                                            function validateSelectBox(obj)
+                                            {
+                                                // Lấy danh sách các options
+                                                var value = obj.value;
+                                                
+                                                if(value === '41'){
+                                                    
+                                                    document.getElementById("context1").style.display = 'none';
+                                                    document.getElementById("context2").style.display = 'block';
+                                                    document.getElementById("context3").style.display = 'none';
+                                                    document.getElementById("context4").style.display = 'none';
+                                                    
+                                                }
+                                                if(value === '90')
+                                                {
+                                                    document.getElementById("context1").style.display = 'none';
+                                                    document.getElementById("context2").style.display = 'none';
+                                                    document.getElementById("context3").style.display = 'block';
+                                                    document.getElementById("context4").style.display = 'none';
+                                                }
+                                                if(value === '72')
+                                                {
+                                                    document.getElementById("context1").style.display = 'none';
+                                                    document.getElementById("context2").style.display = 'none';
+                                                    document.getElementById("context3").style.display = 'none';
+                                                    document.getElementById("context4").style.display = 'block';
+                                                }
+                                                if(value === '100')
+                                                {
+                                                    document.getElementById("context1").style.display = 'block';
+                                                    document.getElementById("context2").style.display = 'none';
+                                                    document.getElementById("context3").style.display = 'none';
+                                                    document.getElementById("context4").style.display = 'none';
+                                                }
+                                                
+                                            }
+                                        </script>
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label for="street_number" class="col-form-label">Số nhà</label>
+                                            <input type="text" class="form-control js-input-street-number" name="street_number" id="street_number" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row mt-5">
+                                    <div class="col-md-12">
+                                        <h3>Thông tin mô tả</h3>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mt-3">
+
+                                    <div class="col-md-6">
+                                        <label for="post_cat" class="col-md-12 col-form-label">Loại chuyên mục</label>
+                                        <select class="form-control" id="post_cat" name="loai_chuyen_muc" required="" data-msg-required="Chưa chọn loại chuyên mục">
+                                            <option value="">-- Chọn loại chuyên mục --</option>
+                                            <option value="1">Cho thuê phòng trọ</option>
+                                            <option value="2">Cho thuê chung cư mini</option>
+                                            <option value="3">Cho thuê nhà nguyên căn</option>
+                                            <option value="4">Cho thuê chung cư nguyên căn</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="post_title" class="col-md-12 col-form-label">Tiêu đề</label>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" name="tieu_de" id="post_title" value="" minlength="30" maxlength="120" required="" data-msg-required="Tiêu đề không được để trống" data-msg-minlength="Tiêu đề quá ngắn" data-msg-maxlength="Tiêu đề quá dài">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="post_content" class="col-md-12 col-form-label">Nội dung mô tả</label>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" name="noi_dung" id="post_content" rows="10" required="" minlength="100" data-msg-required="Bạn chưa nhập nội dung" data-msg-minlength="Nội dung tối thiểu 100 kí tự"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="phone" class="col-md-12 col-form-label">Thông tin liên hệ</label>
+                                            <div class="col-md-12">
+                                                <div class="input-group mb-3">
+                                                    <input id="phone" type="number" name="phone" class="form-control" readonly="readonly" required="" data-msg-required="Số điện thoại" value="0856031773">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="giachothue" class="col-md-12 col-form-label">Giá cho thuê</label>
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <input id="giachothue" name="gia" pattern="[0-9.]+" type="text" class="form-control" required="" data-msg-required="Bạn chưa nhập giá phòng" data-msg-min="Giá phòng chưa đúng">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">đồng</span>
+                                                    </div>
+                                                </div>
+                                                <small class="form-text text-muted">Nhập đầy đủ số, ví dụ 1 triệu thì nhập là 1000000</small>
+                                            </div>
+                                            <label for="text_giachothue" id="text_giachothue" class="col-sm-12 control-label js-number-text" style="color: red;"></label>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="post_acreage" class="col-md-12 col-form-label">Diện tích</label>
+                                            <div class="col-md-12">
+                                                <div class="input-group mb-3">
+                                                    <input id="post_acreage" type="number" attern="[0-9.]+" name="dien_tich" max="1000" class="form-control" required="" data-msg-required="Bạn chưa nhập diện tích">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">m<sup>2</sup></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="doi_tuong" class="col-md-12 col-form-label">Đối tượng cho thuê</label>
+                                            <div class="col-md-12">
+                                                <div class="input-group mb-3">
+                                                    <select class="form-control" id="post_cat" name="doi_tuong">
+                                                <option value="Tất cả">-- Tất cả --</option>
+                                                <option value="Nam">Nam</option>
+                                                <option value="Nữ">Nữ</option>
+                                            </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card" style="background-color: #f1f1f1; margin-top: 30px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Điều kiện cơ sở vật chất</h5>
+                                                <!-- <table class="table table-striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Phòng tắm</td>
+                                                            <td>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Loại tin:</td>
+                                                            <td class="js-package-title">Tin thường</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Gói thời gian:</td>
+                                                            <td class="js-time-type">Đăng theo ngày</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Đơn giá:</td>
+                                                            <td class="js-package-price">2.000/ngày</td>
+                                                        </tr>
+                                                        <tr class="js-use-label hidden">
+                                                            <td>Gắn nhãn:</td>
+                                                            <td>2.000 đ/ngày</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Số ngày:</td>
+                                                            <td class="js-package-days">5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ngày hết hạn</td>
+                                                            <td class="js-package-deadline">17:29, 1/12/2020</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="vertical-align: middle;">Thành tiền:</td>
+                                                            <td><span style="font-size: 30px; font-weight: bold; color: #F90;" class="js-package-grand-total">10.000đ</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table> -->
+                                                <div class="uk-margin-small">
+                                                    <label for="" style="float: left; width: 80px;">Phòng tắm:</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio1" style="width: 10px;height: 10px; margin-left: 20px;"> khép kín</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio1" style="width: 10px;height: 10px; margin-left: 20px;"> chung</label>
+                                                    <br>
+                                                    <label><input class="uk-radio" type="radio" name="radio2" style="margin-left: 100px;width: 10px;height: 10px;"> có nóng lạnh</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio2" style="width: 10px;height: 10px; margin-left: 20px;"> không có nống lạnh</label>
+                                                </div>
+                                                <div class="uk-margin-small">
+                                                    <label for="" style="float: left; width: 80px;">Phòng bếp:</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> có khu bếp riêng</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> có khu bếp chung</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 100px;"> không được nấu ăn</label>
+                                                </div>
+                                                <div class="uk-margin-small">
+                                                    <label for="" style="float: left; width: 80px;">Điều hòa:</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> có</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> không</label>
+                                                </div>
+                                                <div class="uk-margin-small">
+                                                    <label for="" style="float: left; width: 80px;">Ban công:</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> có</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> không</label>
+                                                </div>
+                                                <div class="uk-margin-small">
+                                                    <label for="" style="float: left; width: 80px;">Chung chủ:</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> có</label>
+                                                    <label><input class="uk-radio" type="radio" name="radio" style="width: 10px;height: 10px; margin-left: 20px;"> không</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mt-5">
+                                    <div class="col-md-12">
+                                        <h3>Hình ảnh</h3>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <p>Cập nhật hình ảnh rõ ràng sẽ cho thuê nhanh hơn</p>
+                                        <div class="form-group">
+                                            <div for="browse_photos" class="browse_photos js-dropzone dz-clickable"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload"
+                                                    style="width: 50px; height: 50px; display: block; margin: 0 auto; pointer-events: none;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                                                <span class="js-btn-chon-anh">Thêm Ảnh</span>
+                                            </div>
+                                        </div>
+                                        <div class="list_photos row dropzone-previews" id="list-photos-dropzone-previews"></div>
+                                        <div id="tpl" style="display:none">
+                                            <div class="photo_item col-md-2 col-3 js-photo-manual">
+                                                <div class="photo"><img data-dz-thumbnail=""></div>
+                                                <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+                                                <div class="bottom clearfix">
+                                                    <span class="photo_name" data-dz-name=""></span>
+                                                    <span class="photo_delete" data-dz-remove=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> Xóa</span>
+                                                </div>
+                                                <input name="" value="" type="hidden">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mt-5">
+                                    <div class="col-md-12">
+                                        <h3>Chọn hình thức đăng tin</h3>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-6 js-group-package-type">
+                                        <div class="form-group">
+                                            <label for="post_cat" class="col-form-label">Gói thời gian</label>
+                                            <select class="form-control" id="post_cat" name="package_type" onchange="resetHuyen1(this)">
+                                                <option value="day">Đăng theo ngày</option>
+                                                <option value="week">Đăng theo tuần</option>
+                                                <option value="month">Đăng theo tháng</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 js-group-type-date">
+                                        <div class="form-group">
+                                            <div class="js-package-type js-package-type-day" id="day" style="display: block;">
+                                                <label class="col-form-label" for="formGroupInputSmall">Số ngày</label>
+                                                <select class="form-control" name="total_day">
+                                                    <option value="1">1 ngày</option>
+                                                    <option value="2">2 ngày</option>
+                                                    <option value="3">3 ngày</option>
+                                                    <option value="4">4 ngày</option>
+                                                    <option value="5">5 ngày</option>
+                                                    <option value="6">6 ngày</option>
+                                                    <option value="7">7 ngày</option>
+                                                    <option value="8">8 ngày</option>
+                                                    <option value="9">9 ngày</option>
+                                                    <option value="10">10 ngày</option>
+                                                </select>
+                                            </div>
+                                            <div class="js-package-type js-package-type-week" id="week" style="display: none;">
+                                                <label class="col-form-label" for="formGroupInputSmall">Số tuần</label>
+                                                <select class="form-control" name="total_week">
+                                                    <option value="1">1 tuần</option>
+                                                    <option value="2">2 tuần</option>
+                                                    <option value="3">3 tuần</option>
+                                                    <option value="4">4 tuần</option>
+                                                    <option value="5">5 tuần</option>
+                                                    <option value="6">6 tuần</option>
+                                                    <option value="7">7 tuần</option>
+                                                    <option value="8">8 tuần</option>
+                                                    <option value="9">9 tuần</option>
+                                                    <option value="10">10 tuần</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group js-package-type js-package-type-month" id="month" style="display: none;">
+                                                <label class="col-form-label" for="formGroupInputSmall">Số tháng</label>
+                                                <select class="form-control" name="total_month">
+                                                    <option value="1">1 tháng</option>
+                                                    <option value="2">2 tháng</option>
+                                                    <option value="3">3 tháng</option>
+                                                    <option value="4">4 tháng</option>
+                                                    <option value="5">5 tháng</option>
+                                                    <option value="6">6 tháng</option>
+                                                    <option value="7">7 tháng</option>
+                                                    <option value="8">8 tháng</option>
+                                                    <option value="9">9 tháng</option>
+                                                    <option value="10">10 tháng</option>
+                                                    <option value="11">11 tháng</option>
+                                                    <option value="12">12 tháng</option>
+                                                </select>
+                                            </div>
+                                            <script type="text/javascript">
+                                                function resetHuyen1(obj) {
+                                                    let options = obj.value;
+                                                    console.log(obj.value)
+                                                    document.getElementById('day').style.display = "none";
+                                                    document.getElementById('week').style.display = "none";
+                                                    document.getElementById('month').style.display = "none";
+                                                    document.getElementById(obj.value).style.display = "block";
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mt-5">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-success mb-5 btn-lg btn-block disabled" disabled="">
+                                            Hoàn tất &amp; Thanh toán 
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4">
+                                <div class="card" style="background-color: #f1f1f1;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Thông tin thanh toán</h5>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bạn đang có:</td>
+                                                    <td>0đ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Loại tin:</td>
+                                                    <td class="js-package-title">Tin thường</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gói thời gian:</td>
+                                                    <td class="js-time-type">Đăng theo ngày</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Đơn giá:</td>
+                                                    <td class="js-package-price">2.000/ngày</td>
+                                                </tr>
+                                                <tr class="js-use-label hidden">
+                                                    <td>Gắn nhãn:</td>
+                                                    <td>2.000 đ/ngày</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Số ngày:</td>
+                                                    <td class="js-package-days">5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ngày hết hạn</td>
+                                                    <td class="js-package-deadline">17:29, 1/12/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="vertical-align: middle;">Thành tiền:</td>
+                                                    <td><span style="font-size: 30px; font-weight: bold; color: #F90;" class="js-package-grand-total">10.000đ</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div> -->
+                    </form>
+                    <input type="hidden" id="action" name="action" value="add_new_post">
+                    <input type="hidden" id="map_lat" name="map_lat" value="">
+                    <input type="hidden" id="map_long" name="map_long" value="">
+                    </form>
+
+                    <footer>
+                        <div id="footer">
+                            <div class="container">
+                                <div class="footer_bottom">
+                                    <div class="w980">
+                                        <p class="company_name"><strong>CÔNG TY TNHH LBKCORP</strong></p>
+                                        <p><strong>Tổng đài CSKH: 0917.686.101</strong></p>
+                                        <p>Copyright © 2015 - 2019 Phongtro123.com</p>
+                                        <p>Email: cskh.phongtro123@gmail.com | lienhe.phongtro123@gmail.com</p>
+                                        <p>Địa chỉ: LE-4.07, Toà nhà Lexington Residence, Số 67 Mai Chí Thọ, Phường An Phú, Quận 2, Tp. Hồ Chí Minh.</p>
+                                        <p>Giấy phép đăng ký kinh doanh số 0313588502 do Sở kế hoạch và Đầu tư thành phố Hồ Chí Minh cấp ngày 30 tháng 3 năm 2017.</p>
+                                        <center style="display: flex; align-items: center; justify-content: center;">
+                                            <a class="bds_icon dkbct" style="display: inline-block; margin: 0 5px;" rel="nofollow" target="_blank" href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=43297"></a>
+                                            <a style="display: inline-block; margin: 0 5px;" rel="nofollow" target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=92715b33-c457-422d-95c4-a5453e80e9bf&amp;refurl=https://phongtro123.com/" title="DMCA.com Protection Status" class="dmca-badge"><img src="./Đăng tin mới_files/dmca-badge-w250-2x1-04.png" width="100" alt="DMCA.com Protection Status"></a>
+                                            <script async="" defer="" src="./Đăng tin mới_files/DMCABadgeHelper.min.js.download"></script>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </main>
+            </div>
+        </div>
+
+        <div id="bottom_bar" class="d-lg-none">
+            <ul class="clearfix">
+                <li>
+                    <a href="https://phongtro123.com/"><img src="./quản lý tin đăng_files/house.svg"> Trang chủ</a>
+                </li>
+                <li>
+                    <a href="https://phongtro123.com/tim-kiem"><img src="./quản lý tin đăng_files/search.svg"> Tìm kiếm</a>
+                </li>
+                <li>
+                    <a href="https://phongtro123.com/quan-ly/dang-tin-moi.html"><img src="./quản lý tin đăng_files/dangtin-button-icon-green.svg" style="width: 20px; height: 20px;"> <span style="color: #88cc2d; font-weight: bold;">Đăng tin</span></a>
+                </li>
+                <li>
+                    <a href="https://phongtro123.com/quan-ly/index.html"><img src="./quản lý tin đăng_files/user-profile.svg"> Quản lý</a>
+                </li>
+                <li>
+                    <a href="https://phongtro123.com/quan-ly/nap-tien.html"><img src="./quản lý tin đăng_files/add-money.svg"> Nạp tiền</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- end webpage -->
+
+    <div class="panel-backdrop"></div>
+
+
+    <script src="./asset/javascript/main-dashboard.min.js.download"></script>
+
+
+    <!-- Icons -->
+    <script src="./asset/javascript/feather.min.js.download"></script>
+    <script>
+        feather.replace();
+    </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5d54bf12eb1a6b0be607978c/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+
+    <div id="kvLM4az-1606233137106" class="" style="display: block !important;"><iframe id="lVwGK13-1606233137107" src="./quản lý tin đăng_files/saved_resource.html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 350px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; display: none !important; height: 120px !important;"></iframe>
+        <iframe id="Bj4CVxx-1606233137108" src="./quản lý tin đăng_files/saved_resource(1).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: auto 20px 20px auto !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; pointer-events: auto !important; box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 10px 0px !important; height: 60px !important; min-height: 60px !important; max-height: 60px !important; width: 60px !important; min-width: 60px !important; max-width: 60px !important; border-radius: 50% !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center !important; margin: 0px !important; display: block !important;"></iframe>
+        <iframe id="lwCZliH-1606233137109" src="./quản lý tin đăng_files/saved_resource(2).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: auto 15px 60px auto !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; width: 21px !important; max-width: 21px !important; min-width: 21px !important; height: 21px !important; max-height: 21px !important; min-height: 21px !important;"></iframe>
+        <div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: 0px auto auto 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important; border-radius: unset !important; pointer-events: auto !important;"></div>
+        <div id="iMHvX8G-1606233137106" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: 0px auto auto 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div>
+        <div id="uRUD2lP-1606233137106" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: 0px 0px auto auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div>
+        <div id="bsRN6Ih-1606233137106" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: 0px auto auto 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><iframe id="ApgGSLS-1606233137148" src="./quản lý tin đăng_files/saved_resource(3).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; inset: auto 20px 100px auto !important; position: fixed !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 378px !important; height: 552px !important; display: none !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></iframe></div>
+</body>
+
+</html>

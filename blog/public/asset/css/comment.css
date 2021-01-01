@@ -1,0 +1,165 @@
+    .cmt-list {
+        font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        line-height: 22px;
+        text-align: left;
+        direction: ltr;
+    }
+    
+    .cmt-list a {
+        cursor: pointer;
+        color: #4267b2;
+        text-decoration: none;
+    }
+    
+    .cmt-top {
+        padding: 9px 0 7px;
+        border-bottom: 1px solid #e9ebee;
+        border-top: 1px solid #e9ebee;
+        margin-bottom: 10px;
+    }
+    
+    .cmt-top a.cmt-sort {
+        float: right;
+        font-weight: 700;
+    }
+    
+    .cmt-item {
+        padding: 7px 0;
+    }
+    
+    .cmt-item .cmt-content {
+        display: table-cell;
+        vertical-align: top;
+    }
+    
+    .cmt-item .cmt-name a {
+        font-weight: 700;
+    }
+    
+    .cmt-item .cmt-bottom {
+        font-size: 12px;
+    }
+    
+    .cmt-item .cmt-bottom a {
+        font-weight: normal;
+        padding: 0 5px;
+    }
+    
+    .cmt-item .cmt-bottom a:first-child {
+        padding-left: 0;
+    }
+    
+    .cmt-item .cmt-avatar {
+        float: left;
+        background-color: #EDEDED;
+        margin-bottom: 8px;
+        margin-right: 11px;
+    }
+    
+    .cmt-item .cmt-img {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .cmt-item .shop-cmt-logo {
+        float: left;
+        background-color: #EDEDED;
+        margin-bottom: 8px;
+        margin-right: 11px;
+        margin-left: 8px;
+    }
+    
+    .cmt-item .shop-cmt {
+        margin-left: 60px;
+        margin-top: 4px;
+        border-bottom: none;
+        border-left: 1px dotted #d3d6db;
+        padding: 0;
+    }
+    
+    .cmt-item .shop-cmt-img {
+        padding: 0;
+        margin: 0;
+        border: none;
+        width: 36px;
+        height: 36px;
+        border-radius: 0;
+    }
+    
+    .cmt-footer {
+        margin-top: 10px;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 400;
+        position: relative;
+    }
+    
+    .cmt-footer img {
+        width: 13px;
+    }
+    
+    .svg-icon-star {
+        color: yellow;
+        height: 15px;
+        width: 15px;
+    }
+    
+    .usename {
+        color: #4267b2;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .panel {
+        border-radius: 0;
+        border: 0;
+    }
+    
+    .panel-body {
+        padding: 25px 20px;
+    }
+    
+    .new-comment {
+        font-weight: 400;
+        font-size: 20px;
+        color: #555555;
+        margin-left: 20px;
+    }
+    
+    @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+    /* Styling h1 and links
+––––––––––––––––––––––––––––––––– */
+    
+    h1[alt="Simple"] {
+        color: white;
+    }
+    
+    .starrating>input {
+        display: none;
+    }
+    /* Remove radio buttons */
+    /* .starrating>label:before {
+        content: "\f005";
+        
+        margin: 2px;
+        font-size: 8em;
+        font-family: FontAwesome;
+        display: inline-block;
+    } */
+    
+    .starrating>label {
+        color: #222222;
+        /* Start color when not clicked */
+    }
+    
+    .starrating>input:checked~label {
+        color: #ffca08;
+    }
+    /* Set yellow color when star checked */
+    
+    .starrating>input:hover~label {
+        color: #ffca08;
+    }
+    /* Set yellow color when star hover */
